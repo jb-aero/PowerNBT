@@ -4,6 +4,7 @@ author: ${plugin-author}
 main: me.dpohvar.powernbt.PowerNBT
 website: ${plugin-website}
 version: ${project.version}
+api-version: 1.13
 commands:
     powernbt:
         description: use nbt commands

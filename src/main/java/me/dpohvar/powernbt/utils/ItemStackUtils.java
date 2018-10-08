@@ -96,10 +96,13 @@ public final class ItemStackUtils {
         if (asNMSCopy != null) {
             return asNMSCopy.call(itemStack);
         } else {
-            int type = itemStack.getTypeId();
+            throw new UnsupportedOperationException("NMS Item constructor code needs to be updated.");
+
+            /* TODO int type = itemStack.getType().getId();
             int amount = itemStack.getAmount();
             int data = itemStack.getData().getData();
-            return conNmsItemStack.create(type, amount, data);
+            return conNmsItemStack.create(type, amount, data);*/
+
         }
     }
 
